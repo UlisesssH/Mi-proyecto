@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible"content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="keywords" content="ahorcado, colgado, palabras, letras, abecedario, aprender, ganar, perder, equivocarse, grandes, niños">
+	<meta name="description" content="Usando una fila de guiones, se representa la palabra a adivinar, dando el número de letras y categoría. Si el jugador adivinador sugiere una letra que aparece en la palabra, el programa la escribe en todas sus posiciones correctas. Si la letra sugerido no esta en la palabra, el programa saca un elemento de la figura de hombre palo ahorcado como una marca de conteo.">
+	<meta name="author" content="Ulises Nicolás Heffner">
+	<meta name="robots" content="index">
+
+	<title>Ahorcado</title>
+
+	<link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/index-colgado.css" />
+	<link rel="shortcut icon" href="icon/Ahorcado.png">
+
+</head>
+<body>
+	<div class="botones">
+		<a href="index.html"> <img class="logo" src="icon/games.png"> </a>
+		<button class="sonido" onclick="OnOffSonido()"><img class="imagen_sonido" src="icon/Activar.png"></button>
+	</div>
+
+	<section>
+		<video src="icon/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+	</section>
+
+	<center>
+		<h1 class="titulo">Ahorcado</h1>
+
+		
+		<img class="imagen" src="icon/Ahor_0.png">
+		
+		
+		<br>
+
+		<form class="form-datos">
+
+			<input class="form-datos__jugador" type="text" placeholder="Nombre del Jugador" >
+			<br>
+
+
+			<select class="form-datos__Modo_Juego" onchange="Opcion_Modo_Juego()">
+				<option class="form-datos__Modo_Juego-opcion">Seleccione una opción:</option>
+				<option class="form-datos__Modo_Juego-opcion">Palabra al Azar</option>
+				<option class="form-datos__Modo_Juego-opcion">Palabra Corta</option>
+				<option class="form-datos__Modo_Juego-opcion">Palabra Mediana</option>
+				<option class="form-datos__Modo_Juego-opcion">Palabra Larga</option>
+				<option class="form-datos__Modo_Juego-opcion">Ingresar una Palabra</option>
+			</select>
+
+			<br>
+
+			<input class="form-datos__palabra" type="password" placeholder="Palabra a adivinar"  onkeyup="validar(this)" maxlength="50" >
+		</form>
+
+		<div class="boton-form-datos">
+			<button class="boton-form-datos__boton_jugar" onclick="botonListo()">Jugar</button>
+		</div>
+
+
+		<label class="mostrar_errores"></label>
+		<br>
+
+		<label class="mostrar_letras"></label>
+		<br>
+		<label class="mostrar_letras_ingresadas"></label>
+
+
+		<button class="reiniciar"onclick="reiniciarJuego()">Reiniciar juego</button>
+
+	</center>
+		
+
+
+	<script src="js/index-colgado.js"></script>
+</body>
+</html>

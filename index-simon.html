@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible"content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="keywords" content="juego Simón, Simón juego, gratis, online, ganar, perder, equivocarse, grandes, niños">
+	<meta name="description" content="En el juego de Simón, intenta memorizar la serie de teclas iluminadas y reproducirla, en cada paso se agrega una nueva clave a la serie y el juego se vuelve más difícil. El juego termina cuando el jugador comete el primer error (cuando el jugador presiona la tecla iluminada incorrecta).">
+	<meta name="author" content="Ulises Nicolás Heffner">
+	<meta name="robots" content="index">
+
+	<title>Simón dice</title>
+
+	<link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/index-simon.css" />
+	<link rel="shortcut icon" href="icon/Simon.png">
+
+</head>
+<body>
+
+	<section id="sect1" class="sect">
+		<video src="icon/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+	</section>
+
+	<div class="botones">
+		<a href="index.html"> <img class="logo" src="icon/games.png"> </a>
+		<!-- <a><button class="sonido" onclick="OnOffSonido()">Desactivar Sonido</button></a> -->
+		<button class="sonido" onclick="OnOffSonido()"><img class="imagen_sonido" src="icon/Activar.png"></button>
+	</div>
+
+	
+	
+	<h1 class="titulo">Simón dice</h1>
+	<center class="centrar">
+		<!-- <img src="icon/Simon.png"> -->
+		<div class="juego">
+			<button id="verde"></button>
+			<button id="rojo"></button>
+			<br>
+			<button id="amarillo"></button>
+			<button id="azul"></button>
+		</div>	
+
+		<br>
+		<button class="jugar" onclick="ComenzarJuego()">Jugar</button>
+		
+		
+	</center>
+
+
+	<script src="js/index-simon.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+	font-family: cursive;
+}
+
+body{
+	margin: 0;
+	position: relative;
+	background: url("fondo.jpg") no-repeat center center fixed;
+
+
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+
+	font-size: 20px;
+}
+
+.botones{
+	display: inline;
+}
+
+.sonido{
+	float: right;
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 15px;
+	filter: drop-shadow(0 0 10px cyan)
+	drop-shadow(0 0 20px cyan)
+	drop-shadow(0 0 50px cyan);
+}
+
+.logo{
+	cursor: pointer;
+	margin-top: 20px;
+	width: 200px;
+	filter: drop-shadow(0 0 10px cyan)
+	drop-shadow(0 0 20px cyan)
+	drop-shadow(0 0 50px cyan);
+}
+
+h1{
+	text-align: center;
+	color: cyan;
+}
+
+.imagen{
+	max-width: 300px;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	border: 2px solid black;
+
+	filter: drop-shadow(0 0 10px cyan)
+	drop-shadow(0 0 20px cyan)
+	drop-shadow(0 0 50px cyan);
+
+}
+
+.form-datos__Modo_Juego-opcion, .form-datos__Modo_Juego{
+	font-size: 20px;
+	width: 250px;
+	text-align: center;
+	background-color: black;
+	color: cyan;
+	
+}
+
+.mostrar_letras, .mostrar_letras_ingresadas {
+	margin: 40px;
+	width: 300px;
+	color: cyan;
+}
+
+.mostrar_errores{
+	color: red;
+	margin: 40px;
+	width: 300px;
+}
+
+.form-datos input{
+	font-size: 20px;
+	width: 250px;
+	text-align: center;
+	background-color: black;
+	color: cyan;
+}
+
+.ver_letras, .reiniciar, .form-datos__palabra, .boton-form-datos__boton_jugar{
+	display: none;
+}
+
+button{
+	margin: 10px;
+	font-size: 20px;
+	width: 200px;
+	background-color: cyan;
+	border-radius: 20px;
+}
+
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}

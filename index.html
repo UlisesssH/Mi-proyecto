@@ -1,0 +1,143 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="keywords" content="ahorcado, colgado, palabras, letras, abecedario, aprender, ganar, perder, equivocarse, grandes, niños, juego Simón, Simón juego, gratis, online">
+		<meta name="description" content="Juegos de lógica, juegos para pensar">
+		<meta name="author" content="Ulises Nicolás Heffner">
+		<meta name="robots" content="index">
+
+		<title>Games</title>
+
+		<link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="shortcut icon" href="icon/Logo.png">
+
+	</head>
+	<body>
+
+		<section id="sect1" class="sect">
+			<video src="icon/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+		</section>
+
+
+		<center>
+			<nav class="nav__container"> 
+				<ul class="ul__nav">
+					<button class="Boton_Inicio" onclick="Juegos()" title="My Games"><img class="logo" src="icon/logo.png"></button>
+					<!-- <li><a href="#">Preguntas</a></li> -->
+					<button onclick="Preguntas()">Preguntas</button>
+					<button onclick="Contacto()">Contacto y CV</button>
+					<!-- <button onclick="Ayuda()">Ayuda</button> -->
+					<!-- <li><a>Contacto</a></li>  -->
+				</ul>
+			</nav>
+
+		
+			<div class="juegos">
+				
+				<img class="icono" src="icon/games.png">
+
+				<div class="contenedor">
+					<div class="card" style="--i:url(Ahorcado.png)">
+						<div class="content">
+							<h2>Ahorcado</h2>
+							<a href="index-colgado.html">Jugar</a>
+						</div>
+					</div>
+
+					<div class="card" style="--i:url(Simon.png)">
+						<div class="content">
+							<h2>Simón dice</h2>
+							<a href="index-simon.html">Jugar</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+
+
+
+			<div class="preguntas">
+
+				<h2>Preguntas</h2>
+
+				<details>
+					<summary>
+						¿Por qué una pagina de juegos?
+					</summary>	
+					Una pagina con juegos propios te permite involucrarte en la lógica del lenguaje de programación que estés usando y entender el manejo de la información dentro del mismo, ver las diferencias y similitudes con otros lenguajes y complementarlos con conocimientos que ya tengas de programación.
+				</details>
+
+				<details>
+					<summary>
+						¿Cuáles son los beneficios de los juegos?
+					</summary>	
+					Los juegos proporcionan a los niños habilidades que les permiten explorar realidades nuevas, estar en estados de alerta, desarrollar sensi-bilidad ante las percepciones, des-trezas de resolución de problemas, fortalecer habilidades de toma de decisiones y reacción.
+				</details>
+
+				<details>
+					<summary>
+						¿Por qué crear el juego ahorcado?
+					</summary>	
+					El juego del ahorcado estimula la inteligencia, aumenta la concentración y atención, aumenta el vocabulario de los niños y enseña a manejar y practicar las letras del alfabeto.
+				</details>
+
+				<details>
+					<summary>
+						¿Por qué crear el juego Simón dice?
+					</summary>	
+					El juego de Simón es un excelente juego de memoria para entrenar y ejercitar su memoria. Una práctica regular, permite mejorar tu memoria mientras que divertirse. Es un excelente y famoso juego de memoria. La serie de teclas iluminadas se genera aleatoriamente, por eso el juego es infinito y puedes jugar tantas veces como quieras. Este juego estimula: Coordinación y Precisión. Tolerancia a la frustración y constancia ante el esfuerzo, superación, motivación ante el logro.
+				</details>
+			</div>
+
+
+		</center>
+
+
+		<div class="contacto">
+
+				<div>
+					<h2>Contacto</h2>
+
+					<p>Para ingresar a mi CV presiona <a href="Mi Cv/index.html">aquí</a></p>
+
+					<p>Rellena el formulario para enviar un correo anónimo o <a href="mailto:ulisesheffner@hotmail.com?subject=Vi%20tu%20trabajo&body=¿Que%20tal%20mi%20trabajo?">escribeme por aquí</a></p>
+				</div>
+
+				<div class="flex-container">
+
+					<form class="form" method="post">
+
+						<div class="form_section">
+							<input type="" placeholder="Nombre" name="name" class="form__input" required="">
+						</div>
+
+						<div class="form_section">
+							<input type="" placeholder="Asunto" name="asunto" class="form__input" required="">
+						</div>
+
+						<div class="form_section">
+							<textarea placeholder="Escribe tu mensaje" name="msg" class="form__input" required=""></textarea>
+						</div>
+
+						<input type="submit" class="form__input" class="enviar">
+
+					</form>
+
+				</div>
+
+			</div>
+
+		<?php 
+			include("correo.php");
+		?>
+
+		<script src="js/index.js"></script>
+
+	</body>
+	</html>
